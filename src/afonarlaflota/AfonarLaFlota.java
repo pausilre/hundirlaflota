@@ -83,6 +83,7 @@ public class AfonarLaFlota {
     public static String[][] inserir_vaixells(String tauler[][], int llanxes, int vaixells, int cuirassat, int portaavions){
         int introducidas=0;
         int ejeX,ejeY;
+        int total_vaixells= llanxes+vaixells+cuirassat+portaavions;
        
         while(introducidas<llanxes){
             ejeX=(int) (Math.random()*(tauler.length));
@@ -94,7 +95,6 @@ public class AfonarLaFlota {
         }
         return tauler;   
     }
-    
     
     public static void triar_dificultat(){
         Scanner sc= new Scanner(System.in);
